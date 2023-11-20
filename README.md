@@ -17,20 +17,20 @@ so I am pushing the excalidraw and svg to this repo)
 # FILE BREAKDOWN DATA
 
 ## Webscraping.ipynb
-* This jupiter notebook covers static and dynamic webscraping 
-* We are webscraping the data for better balancing and up to date information, i.e
-there are datasets that exist for this problem, but creating our own allows us 
-more control!
-* The data is scraped from GOAT, a aftermarket, reselling site
-    * Each sneaker on this website is unique, and contains high quality images
-    and up to date price data so this is the perfect choice. 
-    * Goat is dynamically loaded and all postings our listing on a single page,
-    and loaded by infinitely scrolling
-    * This infinitely scrolling caused some problems due to time complexity
-    so the problem was solved slightly different
-    * Instead of taking all sneakers and listing possible or up to a certain point,
-    we took 25 popular models, and used goats search and filtering system
-    to scape each model at a time
+    * This jupiter notebook covers static and dynamic webscraping 
+    * We are webscraping the data for better balancing and up to date information, i.e
+    there are datasets that exist for this problem, but creating our own allows us 
+    more control!
+    * The data is scraped from GOAT, a aftermarket, reselling site
+        * Each sneaker on this website is unique, and contains high quality images
+        and up to date price data so this is the perfect choice. 
+        * Goat is dynamically loaded and all postings our listing on a single page,
+        and loaded by infinitely scrolling
+        * This infinitely scrolling caused some problems due to time complexity
+        so the problem was solved slightly different
+        * Instead of taking all sneakers and listing possible or up to a certain point,
+        we took 25 popular models, and used goats search and filtering system
+        to scape each model at a time
 
 ## Products_Updated.csv
     * The Webscraped data from 25 most popular models
@@ -70,7 +70,13 @@ more control!
 
 
 ## First_Model.ipynb
-    * 
+    * This model is used for testing our data and see how are predictions are doing
+    before transfer learning
+    * The module breaks down 
+        * Decoding the Downloaded_Images_Binary.tfrecords
+        * Loading the Data into Training and Testing
+        * Training the data on the CNN model and making predictions
+        
 
 
 
