@@ -13,6 +13,14 @@ so I am pushing the excalidraw and svg to this repo)
 3. Explanation of our model and the processes of how things were orginal modified
 4. Introducing of stacking to the original model
 
+# Presentation Final_Presentation.pdf
+[Presentation!](https://docs.google.com/presentation/d/1qzVLG2Jog4xSacD-wSF4IL3mGxBnWPD_ooT7e5WG8DY/edit?usp=sharing)
+    * pdf of the presentation
+# Colab Links
+Files Can be also accessed at the colab links
+[Training!](https://colab.research.google.com/drive/1oebJ3ZSIFEuJZhumdY4aPh0Jyl7QZ38E?usp=sharing)
+[Running!](https://colab.research.google.com/drive/1VnKqSBfDsStisIipzB2A7QEdRuAMELhe?usp=sharing)
+[MetaAnalysis!](https://colab.research.google.com/drive/1i7iVuOBpQeCKIhnPwQMoFWASEgiDpBA7?usp=sharing)
 # FILE BREAKDOWN DATA
 
 ## Webscraping.ipynb
@@ -66,6 +74,7 @@ so I am pushing the excalidraw and svg to this repo)
     * Much smaller file size
     * Can be decoded after using code found in Run_Model and Final_Scratch_Model
 
+# FILE BREAKDOWN CNN MODEL 
 
 ## Final_Scratch_Model (TRAINING) 
     * This is code for training the final scratch model!
@@ -92,7 +101,7 @@ so I am pushing the excalidraw and svg to this repo)
 ## Run_Model.ipynb (Predicting)
     * This is code for training the final scratch model!
     * Can be trained at the following colab link!
-    [colab link!](https://colab.research.google.com/drive/1VnKqSBfDsStisIipzB2A7QEdRuAMELhe?usp=sharing)
+    [colab link](https://colab.research.google.com/drive/1VnKqSBfDsStisIipzB2A7QEdRuAMELhe?usp=sharing)
     * This is the code for running the trained model 
     * The module breaks down 
         * Decoding the Downloaded_Images_Binary.tfrecords
@@ -105,12 +114,17 @@ so I am pushing the excalidraw and svg to this repo)
     * Most of the code is taken from Final_Scratch_Model!
     * NOTE: The performance of this is going to skewed by 1-5%. The splitting of our original training and validation data was completely random, so when we run this code, even though it is completely random, training data has now been mixed with the validation data! The models were saved with best validation data, and have a balance between training and validation data
 
-## CNN_Predicted_Probabilies.csv
- * This is a csv of predictions made by the model!
- * The format of it shows for our 4 respones
-    *  Probabilites for each class | Actual Value one hot encoded
+## CNN_Predicted_Probabilies.csv (META DETA)
+    * This is a csv of predictions made by the model!
+    * The format of it shows for our 4 respones
+        *  Probabilites for each class | Actual Value one hot encoded
 
-
+# FILE BREAKDOWN Finaltesting.ipynb
+    * This is model for running further tests on our meta data
+    * The first model created is a Random forest and the second is 
+    a losgitic regression
+    * * Can be trained at the following colab link!
+    [colab link](https://colab.research.google.com/drive/1i7iVuOBpQeCKIhnPwQMoFWASEgiDpBA7?usp=sharing)
 
 
         
